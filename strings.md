@@ -1359,7 +1359,7 @@ The `Str::split` method splits a string into an array using a given separator. Y
 ```php
 use Illuminate\Support\Str;
 
-$segments = Str::split('-', 'laravel-framework');
+$segments = Str::split('laravel-framework', '-');
 
 // ['laravel', 'framework']
 ```
@@ -1367,7 +1367,7 @@ $segments = Str::split('-', 'laravel-framework');
 You may pass a third argument to limit the number of splits:
 
 ```php
-$segments = Str::split(',', 'one,two,three,four', 3);
+$segments = Str::split('one,two,three,four', ',', 3);
 
 // ['one', 'two', 'three,four']
 ```
